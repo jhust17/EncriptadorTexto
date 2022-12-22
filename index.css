@@ -1,0 +1,52 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #aab2d5;
+}
+
+.contenedor {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.content-mensaje {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.content-mensaje img {
+  align-self: flex-start;
+}
+
+.content-mensaje .texto {
+  height: 300px;
+  width: 50%;
+  text-align: center;
+}
+
+.content-mostrarm {
+  height: 710px;
+  background-color: #757fb2;
+  border-radius: 32px;
+}
+.content-aviso .aviso {
+  font-size: 12px;
+  font-weight: 400;
+  color: #495057;
+  opacity: 0.8;
+}
+.content-aviso {
+  padding-top: 110px;
+}
+button {
+  background: #072b61;
+  border-radius: 24px;
+  width: 99px;
+  height: 67px;
+}
