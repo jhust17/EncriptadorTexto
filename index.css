@@ -30,10 +30,8 @@ body {
   text-align: center;
 }
 
-.content-mostrarm {
-  height: 710px;
-  background-color: #757fb2;
-  border-radius: 32px;
+.content-aviso {
+  padding-top: 15px;
 }
 .content-aviso .aviso {
   font-size: 12px;
@@ -41,12 +39,71 @@ body {
   color: #495057;
   opacity: 0.8;
 }
-.content-aviso {
-  padding-top: 110px;
+span{
+  font-size: 15px;
+  font-weight: 600;
+  background: #495057;
+  color: #FFF;
+  border: 5px solid  #495057;
+  border-radius: 20px 20px 20px 20px;
+  
 }
-button {
+.content-botones {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.Fbutton {
+  font-weight: bold;
+  font-style: normal;
   background: #072b61;
   border-radius: 24px;
-  width: 99px;
+  border: 1px solid #0A3871;
+  width: 150px;
   height: 67px;
+}
+.Fbutton:hover{
+  background: #EFF1FA;
+  transform: scale(1.2);
+}
+
+.Sbutton {
+  font-weight: bold;
+  font-style: normal;
+  background: #EFF1FA;
+  border-radius: 24px;
+  border: 1px solid #0A3871;
+  width: 150px;
+  height: 67px;
+}
+
+.Sbutton:hover{
+  background: #072b61;
+  transform: scale(1.2);
+}
+.content-mostrarm {
+  height: 635px;
+  background-color: #757fb2;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.content-mostrarm img{
+  width: 100%;
+}
+.Tbutton{
+  font-weight: bold;
+  font-style: normal;
+  background: #EFF1FA;
+  border-radius: 24px;
+  border: 1px solid #0A3871;
+  width: 150px;
+  height: 67px; 
+}
+.Tbutton:hover{
+  background: #072b61;
+  transform: scale(1.2);
 }
