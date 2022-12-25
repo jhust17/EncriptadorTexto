@@ -7,7 +7,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -25,13 +25,31 @@ body {
 }
 
 .content-mensaje .texto {
-  height: 300px;
+  height: 200px;
   width: 50%;
   text-align: center;
+  border-radius: 24px;
+  border: 0px solid #0a3871;
+  background-color: #aab2d5;
+  
 }
 
+.content-mensaje .texto::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+}
+/* .content-mensaje .texto:active{
+
+} */
+
+
+
+
 .content-aviso {
-  padding-top: 15px;
+  padding-top: 150px;
 }
 .content-aviso .aviso {
   font-size: 12px;
@@ -39,14 +57,13 @@ body {
   color: #495057;
   opacity: 0.8;
 }
-span{
+span {
   font-size: 15px;
   font-weight: 600;
   background: #495057;
-  color: #FFF;
-  border: 5px solid  #495057;
+  color: #fff;
+  border: 5px solid #495057;
   border-radius: 20px 20px 20px 20px;
-  
 }
 .content-botones {
   display: flex;
@@ -58,30 +75,31 @@ span{
   font-style: normal;
   background: #072b61;
   border-radius: 24px;
-  border: 1px solid #0A3871;
+  border: 1px solid #0a3871;
   width: 150px;
   height: 67px;
 }
-.Fbutton:hover{
-  background: #EFF1FA;
+.Fbutton:hover {
+  background: #eff1fa;
   transform: scale(1.2);
 }
 
 .Sbutton {
   font-weight: bold;
   font-style: normal;
-  background: #EFF1FA;
+  background: #eff1fa;
   border-radius: 24px;
-  border: 1px solid #0A3871;
+  border: 1px solid #0a3871;
   width: 150px;
   height: 67px;
 }
 
-.Sbutton:hover{
+.Sbutton:hover {
   background: #072b61;
   transform: scale(1.2);
 }
 .content-mostrarm {
+  width: 30%;
   height: 635px;
   background-color: #757fb2;
   border-radius: 32px;
@@ -91,19 +109,31 @@ span{
   align-items: center;
   text-align: center;
 }
-.content-mostrarm img{
+.content-mostrarm img {
   width: 100%;
 }
-.Tbutton{
+.Tbutton {
+  display: none;
   font-weight: bold;
   font-style: normal;
-  background: #EFF1FA;
+  background: #eff1fa;
   border-radius: 24px;
-  border: 1px solid #0A3871;
+  border: 1px solid #0a3871;
   width: 150px;
-  height: 67px; 
+  height: 67px;
 }
-.Tbutton:hover{
+.Tbutton:hover {
   background: #072b61;
   transform: scale(1.2);
+}
+.mostrar{
+  display: none;
+  font-weight: lighter;
+  font-style: normal;
+  background: #eff1fa;
+  border-radius: 24px;
+  border: 1px solid #0a3871;
+  width: 150px;
+  height: 67px;
+  text-align: center;
 }

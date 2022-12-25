@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@500&display=swap"
       rel="stylesheet"
     />
+    <script src="./index.js" defer></script>
     <link rel="stylesheet" href="./index.css" />
     <title>Encriptador de Texto</title>
   </head>
@@ -17,24 +18,25 @@
     <div class="contenedor">
       <div class="content-mensaje">
         <img src="./img/Logo (1).png" alt="logo" />
-        <p class="texto">Ingrese el texto aqui</p>
+        <input type="text"  class="texto" id="texto" placeholder="Ingrese el texto aqui"></input>
         <div class="content-aviso">
           <p class="aviso">
             <span>!</span> solo letras minusculas y sin acentos
           </p>
           <div class="content-botones">
-            <button class="Fbutton">Encriptar</button>
-            <button class="Sbutton">Desencriptar</button>
+            <input type="submit" class="Fbutton" id="encriptar" value="Encriptar"></input>
+            <input type="submit" class="Sbutton" id="desencriptar" value="Desencriptar"></input>
           </div>
         </div>
       </div>
       <div class="content-mostrarm">
         <img src="./img/Muñeco.png" alt="avatar" />
-        <p>
+        <p id="resultado">
           <strong> Ningun mensaje fue encontrado </strong> <br/>
           Ingresa el texto que desees encriptar o desincriptar
         </p>
-        <button class="Tbutton">Copiar</button>
+        <input type="text" id="mostrar" class="mostrar">
+        <input type="submit" class="Tbutton" id="copiar" value="Copiar"></input>
       </div>
     </div>
   </body>
