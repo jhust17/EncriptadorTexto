@@ -3,6 +3,7 @@ const btndese = document.getElementById("desencriptar");
 const btncopi = document.getElementById("copiar");
 const txttexto = document.getElementById("texto");
 const txtresul = document.getElementById("resultado");
+const txtimg = document.getElementById("avatar");
 const txtmostar = document.getElementById("mostrar");
 var contenido;
 
@@ -14,6 +15,7 @@ function encriptar() {
   contenido = txttexto.value.toLowerCase();
   if (contenido == "") {
     txtmostar.style.display = "none";
+    txtimg.style.display = "block";
     txtresul.style.display = "block";
     btncopi.style.display = "none";
   } else {
@@ -24,6 +26,7 @@ function encriptar() {
       .replace(/o/gi, "ober")
       .replace(/u/gi, "ufat");
     txtresul.style.display = "none";
+    txtimg.style.display = "none";
     txtmostar.value = textoEncriptado;
     txtmostar.style.display = "block";
     btncopi.style.display = "block";
@@ -33,6 +36,7 @@ function desencriptar() {
   contenido = txttexto.value.toLowerCase();
   if (contenido == "") {
     txtmostar.style.display = "none";
+    txtimg.style.display = "block";
     txtresul.style.display = "block";
     btncopi.style.display = "none";
   } else {
@@ -43,6 +47,7 @@ function desencriptar() {
       .replace(/ober/gi, "o")
       .replace(/ufat/gi, "u");
     txtresul.style.display = "none";
+    txtimg.style.display = "none";
     txtmostar.value = textoDesencriptado;
     txtmostar.style.display = "block";
     btncopi.style.display = "block";
@@ -52,5 +57,4 @@ function copiar() {
   txtmostar.select();
   document.execCommand("copy");
   txtmostar.value = "";
-  
 }
